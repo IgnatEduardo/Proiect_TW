@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <title>Baby step - home</title>
+</head>
+<body>
+   <div class="header">
+        <div class="container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <img src = "images/logo1-orange.png" style="width:100px;"  id="mylogo" onclick="changeImage()" alt="idk">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="active dropbtn" href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a href="running-shoes.html">Running</a>
+                                <a href="basketball-shoes.html">Basketball</a>
+                                <a href="lifestyle-shoes.html">Lifestyle</a>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href = "#"><img src="images/cart.png" style="height:23px;width:23px;" alt="idk"></a>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+    <!--all products-->
+    
+    
+    <section>
+        <div class="small-container">
+            <h2 class="title">Lifestyle shoes</h2>
+            <ul>
+                <li class="dropdown">
+                    <p class="dropbtn">Sort by</p>
+                    <div class="dropdown-content">
+                        <button onclick="sortList(0,1)">Name &#8593;</button>
+                        <button onclick="sortList(1,-1)">Name &#8595;</button>
+                        <button onclick="sortList(2,1)">Price &#8593;</button>
+                        <button onclick="sortList(3,-1)">Price &#8595;</button>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <ul class="row" id = "id01">
+                    <li class="img-products">
+                        <a href = "Nike Air Force 1 Low-details.html"><img src="images/lifestyle-shoes/Nike Air Force 1 Low.png"  alt="idk"></a>
+                        <h4>Nike Air Force 1 Low</h4>
+                        <p>101.49</p>
+                    </li>
+                    <li class="img-products">
+                        <img src="images/lifestyle-shoes/Nike Blazer Low X.png"  alt="idk">
+                        <h4>Nike Blazer Low X</h4>
+                        <p>121.49</p>
+                    </li>
+                    <li class="img-products">
+                        <img src="images/lifestyle-shoes/Nike Blazer Mid '77.png"  alt="idk">
+                        <h4>Nike Blazer Mid '77</h4>
+                        <p>131.49</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer>
+        <div class="container">
+            <div class="row-footer">
+                <div id="f-1">
+                    <img src="images/logo1-orange.png" alt="idk">
+                    <p>Baby step and don't forget. Buy from us and you'll never regret.</p>
+                    <p>Making your dreams come to your door. </p>
+                </div>
+                <div id="f-2">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                    </ul>
+                </div>
+                <div id="f-3">
+                    <h2><a href="https://www.google.ro/maps/@39.0911644,31.0807599,4z" target="_blank">Locations</a></h2>
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright 2021 &#8594; Baby Step</p>
+        </div>
+    </footer>
+</body>
+</html>
